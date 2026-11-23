@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Outfit', 'Noto Sans Gujarati', sans-serif;
+    --font-sans: 'Plus Jakarta Sans', 'Noto Sans Gujarati', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  html,
+  body,
+  #root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #060b16;
+    color: #f1f5f9;
+    font-family: var(--font-sans);
+  }
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-mono-tabular {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Custom sleek dark scrollbar for drawers */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.4);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(56, 189, 248, 0.25);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(56, 189, 248, 0.45);
+}
+
+/* Range slider styling */
+input[type='range'].studio-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 4px;
+  border-radius: 2px;
+  background: rgba(148, 163, 184, 0.25);
+  outline: none;
+}
+
+input[type='range'].studio-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #38bdf8;
+  border: 2px solid #060b16;
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+
+input[type='range'].studio-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+}

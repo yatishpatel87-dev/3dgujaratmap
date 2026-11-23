@@ -1,0 +1,6 @@
+{
+  "name": "Gujarat District VFX Studio",
+  "description": "Interactive 3D Gujarat District Map VFX and Educational Geography Studio for Gujarati-medium students and teachers covering all 34 districts of Gujarat.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
